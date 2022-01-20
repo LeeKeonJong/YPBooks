@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/header_json.js"></script>
     <script src="js/header_slide.js"></script>
+    <script src="js/section1_slide.js"></script>
 </head>
 <body>
     
@@ -29,7 +30,7 @@
     </div>
     <div id="header_main">
         <div id="logo_box">
-            <img src="img/yp_logo.png" alt="logo">
+            <a href="#"><img src="img/yp_logo.png" alt="logo"></a>
         </div>
         
         <div id="search_box">
@@ -74,10 +75,44 @@
 <hr>
 
 
-<div class="section1"></div>
+<div class="section1">
+    <div id="section1_slidebox">
+        <div class="section1_slidebox1 autoslide">
+            <div class="section1_slide section1_slide1">
+                <div><img src="img/slider1.jpg" alt="img"></div>
+                <div><img src="img/slider2.jpg" alt="img"></div>
+                <div><img src="img/slider3.jpg" alt="img"></div>
+            </div>
+        </div>
+        <div class="section1_slidebox2 autoslide">
+            <div class="section1_slide section1_slide2">
+                <div><img src="img/slider4.jpg" alt="img"></div>
+                <div><img src="img/slider5.jpg" alt="img"></div>
+                <div><img src="img/slider6.jpg" alt="img"></div>
+            </div>
+        </div>
+    </div>
+    <div id="dots">
+        <span class="dot dot1 active"></span>
+        <span class="dot dot2"></span>
+    </div>
+</div>
 
 <div id="main_contents" style="background-image: url(img/background-img.png);"> 
-<div class="section2"></div>
+
+<div class="section2">
+    <div id="section2_title"><h4>오늘의 책</h4></div>
+    <div id="section2_slidebox">
+        <div class="section2_slidebox1">
+            <div class="section2_thumbnail"></div>
+            <div class="section2_titlebox"><h2 class="section2_title"></h2></div>
+        </div>
+
+    </div>
+</div>
+
+
+
 <div class="section3"></div>
 <div class="section4"></div>
 <div class="section5"></div>
@@ -86,10 +121,10 @@
 <div class="section8"></div>
 </div>
 
-<footer></footer>
+<footer>1</footer>
 
 </div>
-
+    
 
 </body>
 </html>
