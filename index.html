@@ -172,14 +172,14 @@
     <div id="section3_menus">
         <div class="section3_menu1 menu">
             <ul class="section3_ul1">
-                <li class="menu1"></li>
-                <li class="menu1"></li>
-                <li class="menu1"></li>
-                <li class="menu1"></li>
-                <li class="menu1"></li>
-                <li class="menu1"></li>
-                <li class="menu1"></li>
-                <li class="menu1"></li>
+                <li class="menu1"><div class="menu_img"></div><div class="menu_text"></div></li>
+                <li class="menu1"><div class="menu_img"></div><div class="menu_text"></div></li>
+                <li class="menu1"><div class="menu_img"></div><div class="menu_text"></div></li>
+                <li class="menu1"><div class="menu_img"></div><div class="menu_text"></div></li>
+                <li class="menu1"><div class="menu_img"></div><div class="menu_text"></div></li>
+                <li class="menu1"><div class="menu_img"></div><div class="menu_text"></div></li>
+                <li class="menu1"><div class="menu_img"></div><div class="menu_text"></div></li>
+                <li class="menu1"><div class="menu_img"></div><div class="menu_text"></div></li>
             </ul>
         </div>
     </div>
@@ -192,22 +192,27 @@
 		
 		url: "https://dapi.kakao.com/v3/search/book?target=title",
 		
-		data: { query:"베스트셀러",size:10 },
+		data: { query:"반려견",size:10 },
 		headers:{Authorization: "KakaoAK 7822b55068354b3aa11eb62b3a1c0c76"}
 		
 		})
             .done(function (msg) {
-
-                
+               
                 var menus = document.getElementsByClassName('menu1');
 
                 for (var i = 0; i < menus.length; i++) {
 
-                    $(".menu1").eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
-                    $(".menu1").eq(i).append(msg.documents[i].title);
-                    $(".menu1").eq(i).append(msg.documents[i].authors);
-                    $(".menu1").eq(i).append(msg.documents[i].publisher);
-                    $(".menu1").eq(i).append(msg.documents[i].price);
+                    var str = msg.documents[i].title;
+                        var str2 = str.substring(0, 10);
+
+                        var str3 = msg.documents[i].publisher;
+                        var str4 = str.substring(0, 8);
+
+                    $(".menu_img").eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
+                    $(".menu_text").eq(i).append("<b>"+str2+"..."+"</b>"+"<br>");
+                    $(".menu_text").eq(i).append("<span>"+msg.documents[i].authors+"</span>"+" | ");
+                    $(".menu_text").eq(i).append("<span>"+str4+"..."+"</span>"+"<br>");
+                    $(".menu_text").eq(i).append("<p>"+msg.documents[i].price+"원"+"</p>");
                     
                        
                 }
