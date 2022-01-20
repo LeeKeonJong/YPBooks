@@ -42,7 +42,7 @@
 #section3_menus{width: 960px; height: 731px;  background-color: #daefe0;}
 menu{width: 940px; height: 710px; display: flex; align-items: center;}
 .section3_ul1{width: 940px; height: 710px; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;}
-.section3_ul1 .menu1{width: 230px; height: 350px; float: left; display: flex;  flex-direction: column; align-items: center; background-color: tomato;}
+.section3_ul1 .menu1{width: 230px; height: 350px; float: left; display: flex;  flex-direction: column; align-items: center; justify-content: center; background-color: tomato;}
 
 .section4{width: 960px; height: 300px; background-color: #dae8e8;}
 .section5{width: 960px; height: 300px; background-color: #deeadc;}
