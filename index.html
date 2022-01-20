@@ -13,6 +13,9 @@
     <script src="js/header_json.js"></script>
     <script src="js/header_slide.js"></script>
     <script src="js/section1_slide.js"></script>
+    <script src="js/section2_json.js"></script>
+    <script src="js/section2_slide.js"></script>
+    
 </head>
 <body>
     
@@ -101,19 +104,118 @@
 <div id="main_contents" style="background-image: url(img/background-img.png);"> 
 
 <div class="section2">
-    <div id="section2_title"><h4>오늘의 책</h4></div>
-    <div id="section2_slidebox">
-        <div class="section2_slidebox1">
+    <div id="section2_title1"><h4>오늘의 책</h4></div>
+    <div class="section2_slidebox">
+        <div class="section2_slidebox1 section2_divs">
             <div class="section2_thumbnail"></div>
-            <div class="section2_titlebox"><h2 class="section2_title"></h2></div>
-        </div>
 
+            <div class="section2_textbox">
+
+            <div class="section2_titlebox"><h3 class="section2_title"></h3></div>
+
+            <div class="section2_pricebox"><span>인터넷판매가:</span><span class="section2_price"></span><span>(<span class="section2_authors"></span><span class="section2_publisher"></span> )</span></div>
+
+            <div class="section2_stringbox"><p class="section2_string"></p></div>
+        </div>
+        </div>
+        <div class="section2_slidebox2 section2_divs">
+            <div class="section2_thumbnail"></div>
+
+            <div class="section2_textbox">
+
+            <div class="section2_titlebox"><h3 class="section2_title"></h3></div>
+
+            <div class="section2_pricebox"><span>인터넷판매가:</span><span class="section2_price"></span><span>(<span class="section2_authors"></span><span class="section2_publisher"></span> )</span></div>
+
+            <div class="section2_stringbox"><p class="section2_string"></p></div>
+        </div>
+        </div>
+        <div class="section2_slidebox3 section2_divs">
+            <div class="section2_thumbnail"></div>
+
+            <div class="section2_textbox">
+
+            <div class="section2_titlebox"><h3 class="section2_title"></h3></div>
+
+            <div class="section2_pricebox"><span>인터넷판매가:</span><span class="section2_price"></span><span>(<span class="section2_authors"></span><span class="section2_publisher"></span> )</span></div>
+
+            <div class="section2_stringbox"><p class="section2_string"></p></div>
+        </div>
+        </div>
+        <div class="section2_slidebox4 section2_divs">
+            <div class="section2_thumbnail"></div>
+
+            <div class="section2_textbox">
+
+            <div class="section2_titlebox"><h3 class="section2_title"></h3></div>
+
+            <div class="section2_pricebox"><span>인터넷판매가:</span><span class="section2_price"></span><span>(<span class="section2_authors"></span><span class="section2_publisher"></span> )</span></div>
+
+            <div class="section2_stringbox"><p class="section2_string"></p></div>
+        </div>
+        </div>
     </div>
+    <span class="prev">&lt;</span>
+    <span class="next">&gt;</span>
+
 </div>
 
 
 
-<div class="section3"></div>
+<div class="section3">
+    <div id="section3_category">
+        <span class="categorys">MD 추천도서</span><span>|</span>
+        <span class="categorys">화제의 신간</span><span>|</span>
+        <span class="categorys">스터디셀러</span><span>|</span>
+        <span class="categorys">코믹</span>
+    </div>
+    <div id="section3_menus">
+        <div class="section3_menu1 menu">
+            <ul class="section3_ul1">
+                <li class="menu1"></li>
+                <li class="menu1"></li>
+                <li class="menu1"></li>
+                <li class="menu1"></li>
+                <li class="menu1"></li>
+                <li class="menu1"></li>
+                <li class="menu1"></li>
+                <li class="menu1"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $.ajax({
+		
+		method: "GET",
+		
+		url: "https://dapi.kakao.com/v3/search/book?target=title",
+		
+		data: { query:"베스트셀러",size:10 },
+		headers:{Authorization: "KakaoAK 7822b55068354b3aa11eb62b3a1c0c76"}
+		
+		})
+            .done(function (msg) {
+
+                
+                var menus = document.getElementsByClassName('menu1');
+
+                for (var i = 0; i < menus.length; i++) {
+
+                    $(".menu1").eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
+                    $(".menu1").eq(i).append(msg.documents[i].title);
+                    $(".menu1").eq(i).append(msg.documents[i].authors);
+                    $(".menu1").eq(i).append(msg.documents[i].publisher);
+                    $(".menu1").eq(i).append(msg.documents[i].price);
+                    
+                       
+                }
+                
+            });
+</script>
+
+
 <div class="section4"></div>
 <div class="section5"></div>
 <div class="section6"></div>
