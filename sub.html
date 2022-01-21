@@ -363,7 +363,7 @@
 		
 		url: "https://dapi.kakao.com/v3/search/book?target=title",
 		
-		data: { query:"베스트셀러",size:10 },
+		data: { query:"미움받을 용기",size:10 },
 		headers:{Authorization: "KakaoAK 7822b55068354b3aa11eb62b3a1c0c76"}
 		
 		})
@@ -374,8 +374,8 @@
                     console.log(msg.documents[1].thumbnail);
 
                     //sub1
-                    $(".sub_box").append("<h3>"+msg.documents[0].title+"</h3>");
-                    $(".sub_box").append("<img src='" + mgs.documents[0].thumbnail +"'/>");
+                    $(".sub_box").append("<h3>" + msg.documents[0].title + "</h3>");
+                    $(".sub_box").append("<img src='" + msg.documents[0].thumbnail + "'/>");
                     $(".contextbox").append("<h6>" + msg.documents[0].authors[0] + "</h6>");
                     $(".pricenum").append(msg.documents[0].price + "원");
 
