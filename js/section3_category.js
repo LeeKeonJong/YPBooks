@@ -74,8 +74,8 @@ $(function(){
       });
 
       $(".section3_li").mouseleave(function(){
-        $(".menu_img",this).css({"border":"none"});
-        $(".menu_img",this).css({"box-shadow":"5px 5px 10px gray"});
+        $(".section3_img",this).css({"border":"none"});
+        $(".section3_img",this).css({"box-shadow":"5px 5px 10px gray"});
         $(".mouseover",this).css({"opacity":"0"})
       });
 });
