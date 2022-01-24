@@ -58,7 +58,7 @@ $(function(){
                         
                         url: "https://dapi.kakao.com/v3/search/book?target=title",
                         
-                        data: { query:"경제",size:10 },
+                        data: { query:"주식",size:10 },
                         headers:{Authorization: "KakaoAK 7822b55068354b3aa11eb62b3a1c0c76"}
                         
                         })
