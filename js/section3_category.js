@@ -66,4 +66,16 @@ $(function(){
         
       });
 
+
+      $(".section3_li").mouseover(function(){
+        $(".section3_img",this).css({"border":"1px solid #285a35"});
+        $(".section3_img",this).css({"box-shadow":"8px 8px 8px gray"});
+        $(".mouseover",this).css({"opacity":"0.8"})
+      });
+
+      $(".section3_li").mouseleave(function(){
+        $(".menu_img",this).css({"border":"none"});
+        $(".menu_img",this).css({"box-shadow":"5px 5px 10px gray"});
+        $(".mouseover",this).css({"opacity":"0"})
+      });
 });
