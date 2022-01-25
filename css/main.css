@@ -124,11 +124,11 @@ menu{width: 940px; height: 710px; display: flex; align-items: center;}
 .section6_subslide{width: 960px; height: 104px;  overflow: hidden;}
 .section6_subslide ul{width: 1267.2px; height: 104px; display: flex; flex-direction: row; }
 .section6_subslide ul li{width: 316.8px; height: 104px; display: flex; flex-direction: row;  align-items: center; }
-.section6_subthumbnail{width: 70px; height: 100px; box-shadow: 1px 1px 8px gray;}
+.section6_subthumbnail{width: 70px; height: 100px; box-shadow: 1px 1px 8px gray; cursor: pointer;}
 .section6_subthumbnail:hover{border: 1px solid #333;}
 .section6_subthumbnail img{width: 100%; height: 100%;}
 .section6_subtextbox{width: 202px; height: 100px; display: flex; flex-direction: column; justify-content: center; margin-left: -15px;}
-.section6_subtitle{color: #333; font-size: 12px; margin-left: 15px; font-weight: 600;}
+.section6_subtitle{color: #333; font-size: 12px; margin-left: 15px; font-weight: 600; cursor: pointer;}
 .section6_subtitle:hover{color:#285a35;text-decoration: underline;}
 .section6_subauthors{color: #505050; font-size: 11px; margin-left: 15px;}
 
