@@ -40,4 +40,17 @@ $(function(){
         $(".next4").fadeOut(500);
     });
 	setInterval(slide,3000);
+
+
+	$(".section6_slide").mouseover(function(){
+
+		$(".section6_thumbnail").css({"box-shadow":"1px 8px 20px gray"});
+
+	});
+	
+	$(".section6_slide").mouseleave(function(){
+
+		$(".section6_thumbnail").css({"box-shadow":"1px 1px 8px gray"});
+
+	});
 });
