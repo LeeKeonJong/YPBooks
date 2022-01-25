@@ -1,0 +1,40 @@
+$(function(){
+
+	$(".icon_img1,.hovertext1").mouseover(function(){
+		$(".hovertext1").css({"text-decoration":"underline"});
+		$(".icon_img1,.hovertext1").mouseleave(function(){
+			$(".hovertext1").css({"text-decoration":"none"});
+		});
+	});
+	$(".icon_img2,.hovertext2").mouseover(function(){
+		$(".hovertext2").css({"text-decoration":"underline"});
+		$(".icon_img2,.hovertext2").mouseleave(function(){
+			$(".hovertext2").css({"text-decoration":"none"});
+		});
+	});
+	$(".icon_img3,.hovertext3").mouseover(function(){
+		$(".hovertext3").css({"text-decoration":"underline"});
+		$(".icon_img3,.hovertext3").mouseleave(function(){
+			$(".hovertext3").css({"text-decoration":"none"});
+		});
+	});
+	$(".icon_img4,.hovertext4").mouseover(function(){
+		$(".hovertext4").css({"text-decoration":"underline"});
+		$(".icon_img4,.hovertext4").mouseleave(function(){
+			$(".hovertext4").css({"text-decoration":"none"});
+		});
+	});
+	$(".icon_img5,.hovertext5").mouseover(function(){
+		$(".hovertext5").css({"text-decoration":"underline"});
+		$(".icon_img5,.hovertext5").mouseleave(function(){
+			$(".hovertext5").css({"text-decoration":"none"});
+		});
+	});
+	$(".icon_img6,.hovertext6").mouseover(function(){
+		$(".hovertext6").css({"text-decoration":"underline"});
+		$(".icon_img6,.hovertext6").mouseleave(function(){
+			$(".hovertext6").css({"text-decoration":"none"});
+		});
+	});
+
+});
