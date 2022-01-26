@@ -1,398 +1,131 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YPBooks</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
 
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/header_ajax.js"></script>
+    <script src="js/header_slide.js"></script>
 
-            ul,
-            ol,
-            li {
-                list-style: none;
-            }
-
-             header {
-                width: 1400px;
-                height: 150px;
-                margin: 0 auto;
-                border: 1px solid #eee;
-                border-radius: 30px;
-                padding: 10px;
-            }
-
-            h1 a {
-                text-decoration: none;
-                color: #000;
-            }
-
-             section {
-                width: 1400px;
-                height: 1700px; 
-                margin: 30px auto 0 auto;
-                border: 1px solid red;
-                border-radius: 30px;
-                padding: 10px;
-                position: relative;
-            }
-
-            section h3 {
-                padding: 30px 0 0 20px;
-            }
-
-             .sub_box {
-                width: 400px;
-                height: 500px;
-                float: left;
-                text-align: center;
-                margin: 20px;
-                padding: 15px 30px;
-                border-radius: 4px;
-                border: 1px solid #fff;
-                box-shadow: 4px 4px 4px #fff;
-            }
-
-            .sub_box img {
-                width: 200px;
-                height: 300px;
-                float: left;
-                border: 1px solid #ddd;
-                box-shadow: 4px 4px 4px #eee;
-                margin: 60px 0 0 0px;
-            }
-
-            .sub_box h3 {
-                text-align: left;
-            }
-
-             table {
-                width: 700px;
-                border-top: 3px solid #e9e9e9;
-                float: right;
-                border-bottom: 1px solid #e9e9e9;
-                margin: 150px 150px 0 0px;
-                color: #666;
-            }
-
-            td {
-                padding: 6px 15px;
-                text-align: left;
-            }
-
-            td:first-child {
-                width: 100px;
-            }
-
-             button {
-                margin: 3px;
-                cursor: pointer;
-            }
-
-            button:first-child {
-                background-color: #74c8ea;
-                border-radius: 3px;
-                padding: 10px 20px;
-                color: #fff;
-                border: none;
-            }
-
-            button:nth-child(2) {
-                background-color: #a2abb0;
-                border-radius: 3px;
-                padding: 10px 20px;
-                color: #fff;
-                border: none;
-            }
-
-            button:nth-child(3) {
-                background-color: #fff;
-                border-radius: 3px;
-                padding: 10px 20px;
-                color: #666;
-                border: none;
-                border: 1px solid #ddd;
-            }
-
-            button:nth-child(4) {
-                background-color: #fff;
-                border-radius: 3px;
-                padding: 10px 20px;
-                color: #666;
-                border: none;
-                border: 1px solid #ddd;
-            }
-
-             .contextbox {
-                width: 95%;
-                height: 350px;
-                background-color: gold;
-                float: left;
-                margin: 50px 0 0 50px;
-            }
-
-            .contextbox h6 {
-                font-size: 20px;
-                color: #666;
-                text-align: left;
-                line-height: 150%;
-                padding: 50px 50px 0px;
-            }
-
-            .contextbox p {
-                font-size: 15px;
-                color: #666;
-                text-align: left;
-                line-height: 150%;
-                padding: 50px;
-            }
-
-            .contextbox span {
-                font-size: 12px;
-                color: #666;
-                float: right;
-                padding: 50px;
-            }
-
-             #tmpBox {
-                width: 1000px;
-                height: 500px;
-                background: #eee;
-                float: left;
-                margin: 50px 0 0 50px;
-                color: #666;
-            }
-
-             footer {
-                width: 1400px;
-                height: 80px;
-                margin: 0 auto;
-                border: 1px solid #eee;
-                border-radius: 30px;
-            }
-
-            footer p {
-                text-align: center;
-                font-size: 11px;
-                color: #666;
-                margin: 30px 0 0 0px;
-            }
-        </style>
-
-         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-
-    </head>
-
-    <body>
+</head>
+<body>
+    
+    <div id="wrap">
         <header>
-
-            <h1><a href="index.html">도서 API</a></h1>
-
+            <div id="header_real">
+            <div id="personal_info">
+                <span>마이페이지</span>
+                <span>로그인</span>
+                <span>회원인증/가입</span>
+                <span>장바구니</span>
+                <span>주문/배송조회</span>
+                <span id="border_none">고객센터</span>        
+            </div>
+            <div id="header_main">
+                <div id="logo_box">
+                    <a href="sub.html"><img src="img/yp_logo.png" alt="logo"></a>
+                </div>
+                
+                <div id="search_box">
+                    <div id="search_box1">
+                        <a href="#">통합검색</a>
+                        <div><img src="img/btnSearchBarDown.gif" alt="img" class="down"></div>
+                    </div>
+                    <div id="line">|</div>
+                    <div id="search">
+                        <input type="text">
+                        <img src="img/btnSearchBarDown.gif" alt="img" class="down">
+                        <div class="search_img"><img src="img/top_search.gif" alt="img" ></div>
+                    </div>
+                </div>
+        
+                <div class="header_slide">
+                        <ul class="header_slideul">
+                            <li class="header_slideli"><div class="header_slideimg"></div><div class="header_slidetext"></div></li>
+                            <li class="header_slideli"><div class="header_slideimg"></div><div class="header_slidetext"></div></li>
+                            <li class="header_slideli"><div class="header_slideimg"></div><div class="header_slidetext"></div></li>
+                            <li class="header_slideli"><div class="header_slideimg"></div><div class="header_slidetext"></div></li>
+                        </ul>
+                </div>
+                
+            </div>
+                <div id="header_category">
+                    <ul>
+                        <li><a href="sub.html" id="link">베스트도서</a></li>
+                        <li>신간도서</li>
+                        <li>국내도서</li>
+                        <li>외국도서</li>
+                        <li>이벤트</li>
+                        <li>기획/테마</li>
+                        <li>문화행사</li>
+                        <li>기프티콘</li>
+                        <li>회원혜택</li>
+                        <li>출석체크</li>
+                    </ul>
+                </div>
+        </div>
         </header>
+        <hr>
 
+        <div id="section_container">
 
+        <div class="section1">
 
-        <section>
+            <div></div>
+            <div></div>
+            <div></div>
 
+        </div>
 
 
-            <h3>관련 도서</h3>
+        <div class="section2">123</div>
+        <div class="section3">123</div>
 
-
-
-            <div class="sub_box">
-
-
-
-            </div>
-
-
-
-            <table>
-
-
-
-                <tr>
-
-                    <td>판매가</td>
-
-                    <td class="pricenum"></td>
-
-                </tr>
-
-
-
-                <tr>
-
-                    <td>적립금</td>
-
-                    <td>38p</td>
-
-
-
-                </tr>
-
-
-
-                <tr>
-
-                    <td>브랜드</td>
-
-                    <td>피오피스토리</td>
-
-                </tr>
-
-
-
-                <tr>
-
-                    <td>배송구분</td>
-
-                    <td>업체배송</td>
-
-                </tr>
-
-
-
-                <tr>
-
-                    <td>배송비</td>
-
-                    <td>조건부무료배송</td>
-
-                </tr>
-
-
-
-                <tr>
-
-
-
-                    <td>수량</td>
-
-
-
-                    <td>
-
-                        <select name="select" id="select">
-
-                            <option>1</option>
-
-                            <option>2</option>
-
-                            <option>3</option>
-
-                            <option>4</option>
-
-                            <option>5</option>
-
-
-
-                        </select>
-
-
-
-                    </td>
-
-
-
-                </tr>
-
-
-
-                <tr>
-
-                    <td colspan="2">
-
-                        <button>바로 구매</button>
-
-                        <button>장바구니 담기</button>
-
-                        <button>찜하기</button>
-
-                        <button>조르기</button>
-
-                    </td>
-
-                </tr>
-
-
-
-            </table>
-
-
-
-            <div class="contextbox">
-
-
-
-            </div>
-
-
-
-            <div id="tmpBox">
-
-
-
-            </div>
-
-
-
-        </section>
-
-
-
-
+        </div>
 
         <footer>
-
-            <p>Copyright ⓒ INTERPARK Corporation All rights reserved.</p>
-
+            <div id="footer_menubar">
+                <nav>
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">광고안내</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">청약철회</a></li>
+                        <li><a href="#">입점문의</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상정보관리방침</a></li>
+                        <li><a href="#">이메일 무단 수집거부</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="footer_contents">
+                <div id="footer_real">
+                    <div id="footer_logobox"><img src="img/footerlogo.png" alt="img"></div>
+                    <div id="footer_textbox">
+                       <p>회사명 : (주)영풍문고 ㅣ대표이사 : 최영일</p>
+                       <p>소재지 : 서울특별시 강남구 강남대로 542번지 (우)06110</p>
+                        <p>사업자 등록번호 : 773-86-01800 ㅣ 통신판매업 신고번호 : 2020-서울강남-01007 [ 사업자정보확인 ]</p>
+                        <p>개인정보관리 책임자 : 조순제 ㅣ E-mail : customer@ypbooks.co.kr ㅣ 대량주문 : 02-519-2860</p>
+                        <p> COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <div id="footer_btnbox">
+                <button><span>출판사용 통합관리 시스템</span><p>SCM</p></button>
+                <button><span>고객센터</span><p>1544-9020</p></button>
+            </div>
+                </div>
+            </div>
+            
         </footer>
 
-        <script>
-            $.ajax({
-                method: "GET",
-		
-		url: "https://dapi.kakao.com/v3/search/book?target=title",
-		
-		data: { query:"미움받을 용기",size:10 },
-		headers:{Authorization: "KakaoAK 7822b55068354b3aa11eb62b3a1c0c76"}
-		
-		})
+    </div>
 
-                .done(function (msg){
 
-                    console.log(msg.documents[1].title);
-                    console.log(msg.documents[1].thumbnail);
-
-                    //sub1
-                    $(".sub_box").append("<h3>" + msg.documents[0].title + "</h3>");
-                    $(".sub_box").append("<img src='" + msg.documents[0].thumbnail + "'/>");
-                    $(".contextbox").append("<h6>" + msg.documents[0].authors[0] + "</h6>");
-                    $(".pricenum").append(msg.documents[0].price + "원");
-
-                    var str = msg.documents[0].contents;
-                    var str2 = str.substring(0,600);
-
-                    $(".contextbox").append("<p>" + str2 + "</p>");
-                    $(".contextbox").append("<span>" + "자세히보기" + "</span>");
-                });
-
-                $(function(){
-                    $.get("txt1.txt",function(data){
-                        $("#tmpBox").html(data);
-                    })
-                });
-        </script>
-
-    </body>
-
-    </html>
+</body>
+</html>

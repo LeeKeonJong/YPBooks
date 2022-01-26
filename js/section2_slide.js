@@ -34,24 +34,28 @@ $(function(){
 		$('.prev').css("display","block");
 		$('.next').css("display","block");
 		$('.section2_divs').css({border : "1px solid black"});
+		$('.section2_thumbnail').css({"box-shadow":"1px 8px 20px gray"});
 		clearInterval(Interval);
 	});
 	$(".prev").mouseover(function(){
 		$('.prev').css("display","block");
 		$('.next').css("display","block");
 		$('.section2_divs').css({border : "1px solid black"});
+		$('.section2_thumbnail').css({"box-shadow":"1px 8px 20px gray"});
 		clearInterval(Interval);
 	});
 	$(".next").mouseover(function(){
 		$('.prev').css("display","block");
 		$('.next').css("display","block");
 		$('.section2_divs').css({border : "1px solid black"});
+		$('.section2_thumbnail').css({"box-shadow":"1px 8px 20px gray"});
 		clearInterval(Interval);
 	});
 	$(".section2").mouseleave(function(){
 		$('.prev').fadeOut(500);
 		$('.next').fadeOut(500);
 		$('.section2_divs').css({border : "none"});
+		$('.section2_thumbnail').css({"box-shadow":"1px 1px 8px gray"});
 		Interval = setInterval(slide,5000);
 	});	
 
