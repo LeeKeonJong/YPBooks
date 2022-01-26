@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/header_ajax.js"></script>
     <script src="js/header_slide.js"></script>
+    <script src="js/sub/section1.ajax.js"></script>
 
 </head>
 <body>
@@ -78,14 +79,15 @@
         <div class="section1">
 
             <div id="section1_category">
-                <span>HOME > </span>
+                <div id="section1_categorybox">
+                <span id="section1_home">HOME</span> <span class="section1_span">> </span>
                 <select name="category1" id="select1">
                     <option value="korea">국내도서</option>
                     <option value="another">서양도서</option>
                     <option value="japan">일본도서</option>
                     <option value="e-Book">E-book</option>
                 </select>
-                <span>></span>
+                <span class="section1_span">></span>
                 <select name="category2" id="select2">
                     <option value="">선택안함</option>
                     <option value="">사전</option>
@@ -107,7 +109,7 @@
                     <option value="">의학</option>
                     <option value="">수험서</option>
                 </select>
-                <span>></span>
+                <span class="section1_span">></span>
                 <select name="category3" id="category3">
                     <option value="">선택안함</option>
                     <option value="">시</option>
@@ -121,21 +123,78 @@
                     <option value="">문고/전집</option>
                     <option value="">만화</option>
                 </select>
-                <span>></span>
+                <span class="section1_span">></span>
                 <select name="category4" id="category4">
                     <option value="">선택안함</option>
                     <option value="">한국소설</option>
                 </select>
                 <button>선택분야검색</button>
             </div>
+            </div>
 
-            <div id="section1_main"></div>
+            <div id="section1_main">
+                <div id="section1_thumbnailbox">
+                    <div id="section1_thumbnail"></div>
+                    <button>미리보기</button>
+                    <button>영업점 재고 및 위치 확인</button>
+                </div>
+            <div id="section1_textbox">
+              <div id="section1_textbox1">
+               <div id="sobox"> 
+                <button id="so">소득공제</button>
+                <span class="section1_title"></span>
+               </div>
+                <div id="section1_infobox">
+                <div class="section1_authorsbox">
+                    <span class="section1_span">저자 : <span class="section1_authors"></span></span><span class="section1_span"> | </span><span class="section1_span">출판사 : <span class="section1_publisher"></span></span><span class="section1_span"> | </span>
+                </div>
+                  <div class="section1_textinfo">
+                    <span class="section1_datetime"></span><span class="section1_isbn"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="section1_pricebox">
+                <div id="pricebox1">
+                    <span class="pricebox_title">정가</span>
+                    <div><span class="price1"></span></div>
+                </div>
+                <div id="pricebox2">
+                    <span class="pricebox_title">판매가</span>
+                    <div><span class="price2"></span><span>원</span><span> (10% 할인)</span></div>
+                </div>
+                <div id="pricebox3">
+                    <span class="pricebox_title">적립금</span>
+                    <div><span>630원 (5%)</span></div>
+                </div>
+                <div id="pricebox4">
+                    <span class="pricebox_title">배송일정</span>
+                    <div id="pricebox4_btnbox">
+                        <span>오늘 출고 예정   (주말/공휴일 제외)</span>
+                        <button>주문 수량 변경시 안내</button><button>배송안내</button>
+                    </div>
+                </div>
+                <div id="pricebox5">
+                    <span>쿠폰 및 결제혜택</span>
+                    <button>확인하기</button>
+                </div>
+              </div>
+            </div>
+                <div id="section1_btnbox"></div>
+            </div>
+
             <div id="section1_info"></div>
 
         </div>
 
 
-        <div class="section2">123</div>
+        <div class="section2">
+            
+            <div id="section2_container">
+              
+            </div>
+
+        </div>
         <div class="section3">123</div>
 
         </div>
