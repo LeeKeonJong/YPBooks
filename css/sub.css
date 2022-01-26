@@ -25,14 +25,21 @@
 .section1_textinfo{width: 456px; height: 22px;}
 #section1_pricebox{width: 456px; height: auto; background-color: gold;}
 #pricebox1{width: 456px; height: 27px; display: flex; flex-direction: row; align-items: center;}
-#pricebox1 div{width: 456px; height: 27px;}
+#pricebox1 div{width: 370px; height: auto;}
 #pricebox2{width: 456px; height: 27px; display: flex; flex-direction: row; align-items: center;}
-#pricebox2 div{width: 456px; height: 27px;}
+#pricebox2 div{width: 370px; height: 27px;}
 #pricebox3{width: 456px; height: 27px; display: flex; flex-direction: row; align-items: center;}
-#pricebox3 div{width: 456px; height: 27px; }
+#pricebox3 div{width: 370px; height: auto; }
 #pricebox3 div span{width: 26.75; height: 17; font-size: 14px; color: #666666; font-weight: bold;}
-#pricebox4{width: 456px; height: 63px;}
+#pricebox4{width: 456px; height: 63px; display: flex; flex-direction: row; align-items: center;}
+.pricebox4_spantitle{width: 70px; height: 63px;}
+#pricebox4_btnbox{width: 370px; height: 63px; display: flex; flex-direction: column;}
+.pricebox4_span{width: 370px; color: #da4445; font-size: 14px;}
+#pricebox4_btnbox div{width: 370px;  }
+#pricebox4_btnbox div button{width: auto; height: 23px; border: 1px solid #cdcdcd; background-color: #fff; margin-right: 10px; padding: 0 10px;}
 #pricebox5{width: 456px; height: 26px;}
+#pricebox5 span{font-size: 14px; width: auto; color: #7d7d7d;}
+#pricebox5 button{width: 76px; height: 26px; border: none; background-color: #da4445; color: #fff;}
 .pricebox_title{font-size: 14px; color: #7d7d7d7d; width: 70px; margin-left: 0;}
 .price1{font-size: 14px; color: #888;}
 .price2{font-size: 22px; color: #ff0909; font-weight: bold;}
