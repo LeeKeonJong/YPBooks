@@ -92,7 +92,7 @@
 
 
 
-.section3{width: 960px; height: 5000px; display: flex; flex-direction: row; justify-content: space-evenly;  background-color: lightcoral;}
+.section3{width: 960px; height: 4000px; display: flex; flex-direction: row; justify-content: space-evenly;  background-color: lightcoral;}
 #section3_left{width: 718px; height: auto; background-color: #fff;}
 .section3_btnbox{width: 718px; height: 40px; display: flex; flex-direction: row; justify-content: center; align-items: center; background-color: #fff;}
 .section3_btnbox div{width: 118px; height: 40px; border: 1px solid #dcdcdc;  display: flex; justify-content: center; align-items: center; overflow: hidden;} 
@@ -120,7 +120,7 @@
 #section3_left3{width: 718px; height: auto; position: relative; }
 .left3_text1{width: 718px; height: 350px; font-size: 14px; color: #666666; overflow: hidden; line-height: 190%;}
 .afterbar2{content: ""; width: 100%; height: 150px; position: absolute; bottom: 0; left: 0; background: linear-gradient(rgba(255, 255, 255, 0), white); }
-.toggle_btn2{width:  718px; height: 28px; bottom: -40px; position: relative;}
+.toggle_btn2{width:  718px; height: 28px; bottom: -10px; position: relative;}
 .toggle_btn2 .toggle_down2{width: 150px; height: 18px; margin-right: 0; position: relative; color: #295B37; width: 80px; height: 18px; font-size: 14px; cursor: pointer; }
 .toggle_btn2 .toggle_down2:hover{text-decoration: underline;}
 .toggle_btn2 .toggle_up2{width: 100px; height: 18px; margin-right: 0;  color: #295B37; width: 80px; height: 18px; font-size: 14px; cursor: pointer; }
@@ -128,6 +128,18 @@
 .toggle_up2{position: absolute; top: 0; right: 0; display: none;}
 .down2{width: 15px; height: 15px; border: 1px solid #dcdcdc; position: absolute; right: 0; top: 1px;}
 .up2{width: 15px; height: 15px; border: 1px solid #dcdcdc; position: absolute; right: 0; top: 1px; transform: rotate(180deg);}
+#section3_left4{width: 718px; height: auto; position: relative;}
+.left4_text1{width: 718px; height: 350px; font-size: 14px; color: #666666; overflow: hidden; line-height: 190%;}
+.afterbar3{content: ""; width: 100%; height: 150px; position: absolute; bottom: 0; left: 0; background: linear-gradient(rgba(255, 255, 255, 0), white); }
+.toggle_btn3{width:  718px; height: 28px; bottom: -10px; position: relative;}
+.toggle_btn3 .toggle_down3{width: 150px; height: 18px; margin-right: 0; position: relative; color: #295B37; width: 80px; height: 18px; font-size: 14px; cursor: pointer; }
+.toggle_btn3 .toggle_down3:hover{text-decoration: underline;}
+.toggle_btn3 .toggle_up3{width: 100px; height: 18px; margin-right: 0;  color: #295B37; width: 80px; height: 18px; font-size: 14px; cursor: pointer; }
+.toggle_btn3 .toggle_up3:hover{text-decoration: underline;}
+.toggle_up3{position: absolute; top: 0; right: 0; display: none;}
+.down3{width: 15px; height: 15px; border: 1px solid #dcdcdc; position: absolute; right: 0; top: 1px;}
+.up3{width: 15px; height: 15px; border: 1px solid #dcdcdc; position: absolute; right: 0; top: 1px; transform: rotate(180deg);}
+
 
 
 

@@ -33,4 +33,20 @@ $(function(){
 		$(".toggle_down2").show();
 		
 	});
+
+	$(".toggle_down3").click(function(){
+		$(".afterbar3").hide();
+		$(".left4_text1").css({"height":"2100"});
+		$(".toggle_down3").hide();
+		$(".toggle_up3").show();
+		
+	});
+
+	$(".toggle_up3").click(function(){
+		$(".afterbar3").show();
+		$(".left4_text1").css({"height":"350"});
+		$(".toggle_up3").hide();
+		$(".toggle_down3").show();
+		
+	});
 });
