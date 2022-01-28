@@ -20,7 +20,7 @@ $(function(){
 
 	$(".toggle_down2").click(function(){
 		$(".afterbar2").hide();
-		$(".left3_text1").css({"height":"2600"});
+		$(".left3_text1").css({"height":"2520"});
 		$(".toggle_down2").hide();
 		$(".toggle_up2").show();
 		
